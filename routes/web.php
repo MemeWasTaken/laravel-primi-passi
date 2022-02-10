@@ -50,3 +50,11 @@ Route::get('/', function () {
 
     return view('home', $data);
 });
+
+Route::get('/contacts', function () {
+    return view('contacts');
+})->name('contacts');
+
+Route::get('/about', function () {
+    return view('about');
+})->name('about');

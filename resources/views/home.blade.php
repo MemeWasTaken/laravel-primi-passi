@@ -22,6 +22,8 @@
             @endforeach
         </ul>
 
+        <a href="{{ route('contacts') }}"> Contacts </a>
+        <a href="{{ route('about') }}"> About </a>
 
     </body>
 </html>
