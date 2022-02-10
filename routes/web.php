@@ -18,5 +18,35 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', function () {
-    return view('home');
+
+    $data = [
+        'class49' => [
+            [
+                'name' =>  'Fabio',
+                'surname' => 'Giannitrapani',
+                'age' => 34,
+                'city' => 'Trapani',
+            ],
+            [
+                'name' =>  'Sara',
+                'surname' => 'Grigolin',
+                'age' => 26,
+                'city' => 'Padova',
+            ],
+            [
+                'name' =>  'Francesco',
+                'surname' => 'Ostellari',
+                'age' => 19,
+                'city' => 'Padova',
+            ],
+            [
+                'name' =>  'Emanuele',
+                'surname' => 'Lazzari',
+                'age' => 20,
+                'city' => 'Parma',
+            ],
+        ] 
+    ];
+
+    return view('home', $data);
 });
